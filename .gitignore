@@ -1,1 +1,6 @@
 MNIST_data/
+.project
+.pydevproject
+overly-simple-example.py
+tf_logs/
+
