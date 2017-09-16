@@ -3,4 +3,6 @@ MNIST_data/
 .pydevproject
 overly-simple-example.py
 tf_logs/
+*events.out.tfevents.*
+
 
