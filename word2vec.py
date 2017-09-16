@@ -66,10 +66,10 @@ def run():
   with tf.Session() as sess:
     sess.run(init)
 
-    average_los = 0.00
+    average_loss = 0.00
     for step, batch_data in enumerate(train_data):
       inputs, labels = batch_data
-      fedd_dict = {batch_inputs: inputs, batch_labels: labels}
+      feed_dict = {batch_inputs: inputs, batch_labels: labels}
       _, loss_val = sess.run([optimizer, loss], feed_dict)
       average_loss += loss_val
       if step % 1000 == 0:
